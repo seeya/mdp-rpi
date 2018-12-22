@@ -1,4 +1,14 @@
 # Bluetooth on the RPI
+Before anything, make sure the device is paired with the RPI.
+We can do the pairing through `bluetoothctl`.
+
+```
+power on
+discoverable on
+pairing on
+agent on
+```
+
 
 Modify `/etc/systemd/system/dbus-org.bluez.service`
 
