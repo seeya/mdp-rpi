@@ -10,6 +10,7 @@ ExecStart=/usr/lib/bluetooth/bluetoothd
 
 # NEW
 ExecStart=/usr/lib/bluetooth/bluetoothd -C
+ExecStartPost=/usr/bin/sdptool add SP
 ```
 
 Next add serial profile
